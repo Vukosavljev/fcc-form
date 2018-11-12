@@ -10,23 +10,22 @@ h1 {
 }
 .container {
     background-color: white;
-    margin: 0 20%;
+    margin: 0 5%; 
 }
 .row {
-    padding: 1%;
+    padding: 0 5%;;
     text-align: center;
 }
 .labels {
-    display: inline-block;
-    width: 45%;
-    text-align: right;
-    margin-right: 12px;
-    vertical-align: top;
+    display: block;
+    width: 100%;
+    text-align: left;
 }
 .right-row{
-    display: inline-block;
-    width: 45%;
+    display: block;
+    width: 100%;
     text-align: left;
+
 }
 ul {
     padding: 0;
@@ -36,14 +35,14 @@ ul li {
 }
 select, textarea {
     position: relative;
-    top: 18px;  
-    vertical-align: bottom;
+    bottom: 10px;
 }
+
 input[type="submit"]{
-    margin-top: 30px;
-    background-color: gray;
-    color: antiquewhite;
-    width: 10%;
+    margin-top: 10px;
+    background-color:  rgb(83, 192, 177);
+    color: black;
+    width: 15%;
     padding: 5px;
     border: 2px solid black;
 }
@@ -56,5 +55,37 @@ textarea {
 }
 
 @media (min-width: 700px){
-
+    .container {
+        margin: 0 10%;
+    }
+    .row {
+        padding: 1%;
+        text-align: center;
+    }
+    .labels {
+        display: inline-block;
+        width: 45%;
+        text-align: right;
+        margin-right: 12px;
+        vertical-align: top;
+    }
+    .right-row{
+        display: inline-block;
+        width: 45%;
+        text-align: left;
+    }
+    select, textarea {
+        position: relative;
+        top: 18px;  
+        vertical-align: bottom;
+    }
+    input[type="submit"]{
+        margin-top: 20px;
+        width: 10%;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        margin: 0 20%;
+    }
 }
